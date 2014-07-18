@@ -1,3 +1,11 @@
+# Folders
+bin/*
+obj/*
+
+# Codeblocks
+*.depend
+*.layout
+
 # Object files
 *.o
 *.ko
