@@ -33,6 +33,12 @@ will create a `lua_program.txt` file in the current directory.
 
 This program can be served to a turtle in [ComputerCraft](http://www.computercraft.info/).
 
+Where to get KV6 files?
+=======================
+Download Ken Silverman's [SLAB6 tool](http://advsys.net/ken/download.htm). It comes with a few .kvx files that can be converted to kv6 just by opening them in slab6, and saving them as kv6.
+
+You can also download Ken Silverman's [POLY2VOX tool](http://advsys.net/ken/download.htm) to convert .3ds or .obj files that you can find for free on the internet.
+
 Credits
 =======
 The KV6 loading code is an extracted and modified version of the loadkv6() function of Ken Silverman's [SLAB6 tool](http://advsys.net/ken/download.htm).
