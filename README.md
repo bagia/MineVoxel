@@ -33,4 +33,7 @@ will create a `lua_program.txt` file in the current directory.
 
 This program can be served to a turtle in [ComputerCraft](http://www.computercraft.info/).
 
+Credits
+=======
+The KV6 loading code is an extracted and modified version of the loadkv6() function of Ken Silverman's [SLAB6 tool](http://advsys.net/ken/download.htm).
 
