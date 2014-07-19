@@ -45,14 +45,6 @@ int main(int argc, const char **argv)
         goto exit;
     }
 
-/*unsigned short*** points = kv6_points();
-points[5][20][36] = 2;
-turtle_xy_position t; t.x = -1; t.y = -1;
-turtle_xy_position p; p.x = 6; p.y = 21;
-    t = find_closest_to(p,36);
-    printf("t: x=%d, y=%d", t.x, t.y);
-
-return 0;*/
     generate_code();
 
 exit:
@@ -237,9 +229,10 @@ void debug_print_layer(long z)
 void how_to_use()
 {
     printf("Usage:\n");
-    printf("\tMineVoxel.exe [-d] kv6_file\n");
+    printf("\tMineVoxel.exe [-d|-dc] kv6_file\n");
     printf("\t\tkv6_file: path to a .kv6 file\n");
     printf("\t\t-d: debug output\n");
+    printf("\t\t-dc: comprehensive debug output\n");
 }
 
 
