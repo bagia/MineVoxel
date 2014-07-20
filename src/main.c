@@ -161,9 +161,14 @@ turtle_xy_position find_closest_to(turtle_xy_position position, long z)
     closest.x = -1;
     closest.y = -1;
 
-    // TODO: optimize the stop condition which is currently set to xsiz or ysiz, which
-    // is an arbitrary "long enough" number.
-    for(step=0; step < xsiz || step < ysiz; step++)
+    long max_x_left = position.x;
+    long max_x_right = xsiz - position.x;
+    long max_x = (max_x_left > max_x_right) ? max_x_left : max_x_right;
+    long max_y_top = position.y;
+    long max_y_bottom = ysiz - position.y;
+    long max_y = (max_y_top > max_y_bottom) ? max_y_top : max_y_bottom;
+
+    for(step=0; step < max_x || step < max_y; step++)
     {
         for(candidate.x=position.x - step -1; candidate.x<=position.x+step+1; candidate.x++)
         {
