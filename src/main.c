@@ -167,8 +167,9 @@ turtle_xy_position find_closest_to(turtle_xy_position position, long z)
     long max_y_top = position.y;
     long max_y_bottom = ysiz - position.y;
     long max_y = (max_y_top > max_y_bottom) ? max_y_top : max_y_bottom;
+    long max = (max_x > max_y) ? max_x : max_y;
 
-    for(step=0; step < max_x || step < max_y; step++)
+    for(step=0; step < max; step++)
     {
         for(candidate.x=position.x - step -1; candidate.x<=position.x+step+1; candidate.x++)
         {
